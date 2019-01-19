@@ -1,0 +1,205 @@
+.italic { font-style: italic;}
+/*Table schedule*/
+.shedule-result {
+    /* width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box;
+    overflow: auto; */
+}
+#shedule {
+    width: 100%;
+    box-sizing: border-box;
+}
+.paud {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    background: #455a64!important;
+    padding: .2em;
+    color: #fff;
+    text-align: center;
+}
+.chislit-tab.active, .znamenat-tab.active {
+    color: #BF0021;
+    cursor: default;
+}
+.chislit-tab, .znamenat-tab {
+    display: inline-block;
+    margin: 0 1rem;
+    cursor: pointer;
+    position: relative;
+    color: #8B8F98;
+}
+.chislit-tab.active:after, .znamenat-tab.active:after {
+    left: 5px;
+    left: -18px;
+    top: 5px;
+    width: 9px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 3px solid #BF0021;
+    border-bottom: 3px solid #BF0021;
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+}
+.dennedeli {
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: #455a64!important;
+    padding: 10px 0;
+    position: absolute;
+    width: 2.6rem;
+    text-align: center;
+}
+.den-content {
+    background: #F2F2F2;
+    float: left;
+    width: calc(100% - 42px);
+    margin-left: 2.6rem;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+}
+.td_style1  {
+   display:none;
+}
+.den-content.without-zn.znamenat-day, .den-content.current-day.znamenat-day {
+    display: none;
+}
+.td_style2_ch a, .td_style2_zn a {pointer-events: none;cursor: default;text-decoration: none;}
+.time-para, .npara {
+    font-size: 1em;
+    display: table-cell;
+    min-width: 1rem;
+    vertical-align: top;
+    padding: 1rem;
+    text-align: center;
+    border-left: 1px solid #dadadd;
+}
+#shedule {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ch-zn {
+    width: 100%;
+    display: table-cell;
+    border-left: 1px solid #ccc;
+}
+.nottable_fio {
+    margin-top: 0px;
+    display: block;
+}
+.den-content a {
+    color: #BF0021;
+    font-weight: 700;
+    text-decoration: none;
+}
+.ch-zn-tab{
+    margin-bottom: 1rem;
+}
+.vot_den {
+    float: left;
+    width: 100%;
+}
+
+#birds{
+    border: 2px solid #455a64;
+    border-radius: .5em;
+    width:15rem;
+}
+.dnphone {
+    display: none;
+}
+.ch-zn-zag{
+    display: none;
+}
+
+.den-content.without-zn.znamenat-day{display:none}
+.den-content.without-ch.chislit-day{display:none}
+#notes
+{
+    padding: 20px;
+    line-height: 1.4;
+    overflow: scroll;
+}
+/*Надстройка quasar css стилей*/
+.q-tab-label{
+    font-size: 0.75em;
+    position: relative;
+}
+.select-style {
+    border: 3px solid gray;
+    width: 120px;
+    border-radius: 7px;
+    overflow: hidden;
+    background: white no-repeat 90% 50%;
+    width: 95%;
+}
+
+.select-style option {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+#groups input {margin-left: 1%;}
+/*Радиобаттон*/
+.form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     color: red;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border-radius: 50px;
+     cursor: pointer;     
+     outline: none;
+     border: 1px solid darkgoldenrod;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+/*Радиобаттон конец*/
+.animated{
+    animation-duration:1.5s;
+}
+.invise
+{
+    display: none;
+}
+.q-table tbody td {
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: normal;
+}
+.prep{
+    color:red;
+}

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.agu.schedule" version="2.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Schedule AGU</name>
+    <description>Расписание АГУ</description>
+    <author email="ddmasters@mail.ru" href="https://dmasters.online">
+        DMastersTeam
+    </author>
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="res/icon/android/logo_agu.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <allow-navigation href="*" />
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
+    <content src="http://192.168.1.66:8080/index.html" />
+    <allow-navigation href="http://172.16.3.225:8080/index.html" />
+    <allow-navigation href="http://172.16.7.5:8080/index.html" />
+    <allow-navigation href="http://192.168.1.66:8080/index.html" />
+    <engine name="browser" spec="^5.0.4" />
+    <engine name="android" spec="^7.1.4" />
+    <engine name="ios" spec="^4.5.5" />
+</widget>

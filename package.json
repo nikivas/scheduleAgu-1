@@ -1,0 +1,49 @@
+{
+  "name": "schedule",
+  "version": "2.0.4",
+  "description": "Расписание АГУ",
+  "productName": "Расписание АГУ",
+  "cordovaId": "org.agu.schedule",
+  "author": "Serdar Durdyev",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "jquery-ui": "^1.12.1",
+    "npm": "^6.4.1",
+    "to": "^0.2.9",
+    "update": "^0.7.4",
+    "vue-i18n": "^7.3.3"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-eslint": "^8.2.6",
+    "decache": "^4.5.0",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.7.1",
+    "install": "^0.12.2",
+    "jquery": "^3.3.1",
+    "jquery-mobile": "^1.4.1",
+    "quasar-cli": "^0.16.0",
+    "vue-resource": "^1.5.1"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
