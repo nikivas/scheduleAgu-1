@@ -1,14 +1,13 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-import estudiantes from './estudiantes'
-import audience from './audience'
-import teacher from './teacher'
-import helper from './helper'
-import mywaves from './mywaves'
-import VueResource from 'vue-resource'
-Vue.use(Vuex)
-
+import estudiantes from "./estudiantes";
+import audience from "./audience";
+import teacher from "./teacher";
+import helper from "./helper";
+import mySchedule from "./mySchedule";
+import VueResource from "vue-resource";
+Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
@@ -16,8 +15,8 @@ const store = new Vuex.Store({
     audience,
     teacher,
     helper,
-    mywaves
+    mySchedule
   }
-})
+});
 
-export default store
+export default store;

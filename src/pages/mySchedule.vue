@@ -157,7 +157,7 @@ export default {
     this.preloadMeineKurses();
     this.loadAvailableDays();
     this.preloadDefaultDay();
-	  this.preloadDayZnamenatel();
+    this.preloadDayZnamenatel();
   },
   created() {},
   methods: {
@@ -178,7 +178,7 @@ export default {
       }
     },
     acceptar() {
-      this.$store.commit("mywaves/acceptar");
+      this.$store.commit("mySchedule/acceptar");
       // setTimeout(() => {
       this.preloadDefaultDay();
       this.preloadDayZnamenatel();
@@ -208,28 +208,28 @@ export default {
       }
     },
     ...mapActions({
-      load_all_schedule: "mywaves/load_all_schedule",
-      load_faculties: "mywaves/load_faculties",
-      load_speacilaty: "mywaves/load_speacilaty",
-      preloaded_kurses: "mywaves/preloaded_kurses",
-      spec_changed: "mywaves/spec_changed",
-      checkVisibilty: "mywaves/checkVisibilty",
-      goToSettings: "mywaves/goToSettings",
-	  returnToGroups: "mywaves/returnToGroups",
-	  weekHandler: "mywaves/weekHandler"
+      load_all_schedule: "mySchedule/load_all_schedule",
+      load_faculties: "mySchedule/load_faculties",
+      load_speacilaty: "mySchedule/load_speacilaty",
+      preloaded_kurses: "mySchedule/preloaded_kurses",
+      spec_changed: "mySchedule/spec_changed",
+      checkVisibilty: "mySchedule/checkVisibilty",
+      goToSettings: "mySchedule/goToSettings",
+      returnToGroups: "mySchedule/returnToGroups",
+      weekHandler: "mySchedule/weekHandler"
     }),
     ...mapMutations({
-      preloadMeineKurses: "mywaves/preloadMeineKurses"
+      preloadMeineKurses: "mySchedule/preloadMeineKurses"
     }),
     loadAvailableDays() {
       if (this.isGroupsSelected()) {
         const groups = JSON.parse(localStorage.getItem("meine_liben_groups"));
         const groupName = groups != null ? groups[0] : "";
-        this.$store.commit("mywaves/updateAvailableDays", {
+        this.$store.commit("mySchedule/updateAvailableDays", {
           groupName: groupName,
           week: 1
         });
-        this.$store.commit("mywaves/updateAvailableDays", {
+        this.$store.commit("mySchedule/updateAvailableDays", {
           groupName: groupName,
           week: 2
         });
@@ -242,7 +242,7 @@ export default {
       const groupName = myGroup != null ? myGroup[0] : "";
       const week = this.typeOfWeek == "chislitel_tab" ? 1 : 2;
       if (groupName != "") {
-        this.$store.dispatch("mywaves/chislitelDaySchedule", {
+        this.$store.dispatch("mySchedule/chislitelDaySchedule", {
           groupName: groupName,
           dayName: day,
           week
@@ -256,10 +256,10 @@ export default {
   },
   computed: {
     getAvailableDaysChislitel() {
-      return this.$store.getters["mywaves/getAvailableDaysChislitel"];
+      return this.$store.getters["mySchedule/getAvailableDaysChislitel"];
     },
     getAvDaysZnamenatel() {
-      return this.$store.getters["mywaves/getAvDaysZnamenatel"];
+      return this.$store.getters["mySchedule/getAvDaysZnamenatel"];
     }
   }
 };

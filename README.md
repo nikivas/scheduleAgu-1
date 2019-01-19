@@ -30,7 +30,7 @@ npm install
 To run project in the browser you need run next 
 
 ```bash
-quasar -m cordova -T browser
+quasar dev -m cordova -T browser
 ```
 
 Enjoy!
