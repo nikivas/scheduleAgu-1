@@ -56,6 +56,7 @@ export function preloadMeineKurses(state) {
 
 export const updateAvailableDays = (state, payload) => {
   var all_schedule = JSON.parse(localStorage.getItem("all_schedule"));
+  console.log(all_schedule);
   const days =
     all_schedule[payload.groupName] != null ||
     all_schedule[payload.groupName] != undefined

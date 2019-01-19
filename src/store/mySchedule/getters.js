@@ -53,6 +53,7 @@ export function getAllScheduleJson(state) {
             JSON.stringify(json.data) != localStorage.getItem("all_schedule")
           ) {
             localStorage.setItem("all_schedule", JSON.stringify(json.data));
+            resolve(JSON.stringify(json.data));
           }
           resolve(json.data);
         })

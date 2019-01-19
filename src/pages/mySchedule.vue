@@ -150,14 +150,14 @@ export default {
       typeOfWeek: "chislitel_tab"
     };
   },
-  mounted() {
-    this.checkVisibilty();
-    this.load_faculties();
-    this.preloaded_kurses();
-    this.preloadMeineKurses();
-    this.loadAvailableDays();
-    this.preloadDefaultDay();
-    this.preloadDayZnamenatel();
+  async mounted() {
+    await this.checkVisibilty();
+    await this.load_faculties();
+    await this.preloaded_kurses();
+    await this.preloadMeineKurses();
+    await this.loadAvailableDays();
+    await this.preloadDefaultDay();
+    await this.preloadDayZnamenatel();
   },
   created() {},
   methods: {
